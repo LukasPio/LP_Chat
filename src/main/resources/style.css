@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto';
+    background-color: rgb(68, 65, 65);
+}
+
+.messageArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 40px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(52, 52, 52);
+    height: 40vh;
+    width: 40vw;
+    padding: 10px;
+    gap: 2.5px;
+    text-align: center;
+    color: white;
+    overflow-y: auto;
+}
+
+.messages::-webkit-scrollbar {
+    width: 7px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: #e0dbdb; 
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 5px;
+    border-radius: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.messages::-webkit-scrollbar-thumb:active {
+    background: #3b3b3b; 
+}
+
+.message-input, .send-button {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid black 2px;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.message-text {
+    width: 300px;
+    word-wrap: break-word;
+    color: rgb(246, 227, 227);
+}
+
+.user-name {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.send-button {
+    font-size: 16px;
+    width: 150px;
+    transition: 0.6s;
+    background-color: #c4bebe;
+}
+
+.send-button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
